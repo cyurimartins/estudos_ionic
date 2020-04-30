@@ -1,0 +1,80 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Meu App
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h1>Botões</h1>
+
+  <ion-button>Padrão</ion-button>
+
+  <ion-button href="http://google.com.br">Link</ion-button>
+
+  <!-- CORES -->
+  <h4>Cores</h4>
+  <ion-button color="primary">Primary</ion-button>
+  <ion-button color="secondary">Secondary</ion-button>
+  <ion-button color="tertiary">Tertiary</ion-button>
+
+  <ion-button color="success">success</ion-button>
+  <ion-button color="warning">Warning</ion-button>
+  <ion-button color="danger">danger</ion-button>
+  <ion-button color="light">light</ion-button>
+  <ion-button color="medium">medium</ion-button>
+  <ion-button color="dark">dark</ion-button>
+
+  <h4>Expandido</h4>
+  <ion-button (click)="onClick()" expand="full">
+    Full
+  </ion-button>
+  <ion-button (click)="onClick()" expand="block">
+    Block
+  </ion-button>
+
+  <h4>Arredondado</h4>
+  <ion-button (click)="onClick()" shape="round">
+    Arredondado
+  </ion-button>
+
+  <h4>Preenchimento</h4>
+  <ion-button (click)="onClick()" fill="outline">
+    Preenchimento
+  </ion-button>
+
+  <h4>Ícones</h4>
+  <ion-button (click)="onClick()" shape="round">
+    <ion-icon slot="start" name="star"></ion-icon>
+    Icones
+  </ion-button><br>
+
+  <ion-button (click)="onClick()" shape="round">
+    <ion-icon slot="end" name="star"></ion-icon>
+    Icones
+  </ion-button>
+
+  <ion-button (click)="onClick()" shape="round">
+    <ion-icon slot="icon-only" name="star"></ion-icon>
+  </ion-button>
+
+  <h4>Tamanhos</h4>
+
+  <ion-button (click)="onClick()" size="large">
+    Large
+  </ion-button>
+
+  <ion-button (click)="onClick()">
+    Padrão
+  </ion-button>
+
+  <ion-button (click)="onClick()" size="small">
+    Small
+  </ion-button>
+  
+
+
+
+</ion-content>
