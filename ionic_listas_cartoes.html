@@ -1,0 +1,215 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Ionic
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+
+  <h4>Listas</h4>
+  <ion-list>
+    <ion-item>
+      <ion-icon slot="start" name="add"></ion-icon>
+      <ion-label>1.Awesome Label</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="start" name="add"></ion-icon>
+      <ion-label>2.Awesome Label</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-icon slot="start" name="add"></ion-icon>
+      <ion-label>3.Awesome Label</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <h4>Listas avatar</h4>
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://source.unsplash.com/random/100x100" alt="">      
+      </ion-avatar>
+      <ion-label>Yuri Martins</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://source.unsplash.com/random/100x100" alt="">      
+      </ion-avatar>   
+      <ion-label>Yara Martins</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="https://source.unsplash.com/random/100x100" alt="">            </ion-avatar>
+      <ion-label>Gisele Holanda</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <h4>Listas Slide</h4>
+  <ion-list>
+    <ion-item-sliding>
+
+      <ion-item>
+        <ion-label>Yuri Martins</ion-label>
+      </ion-item>
+
+      <ion-item-options>
+        <ion-item-option color="success">
+          <ion-icon slot="start" name="create"></ion-icon>
+          Alterar
+        </ion-item-option>
+        <ion-item-option color="danger">
+          <ion-icon slot="start" name="trash"></ion-icon>
+
+          Excluir
+        </ion-item-option>
+      </ion-item-options>      
+
+    </ion-item-sliding>
+
+    <ion-item-sliding>
+
+      <ion-item>
+        <ion-label>Gisele Holanda</ion-label>
+      </ion-item>
+
+      <ion-item-options>
+        <ion-item-option color="success">
+          <ion-icon slot="start" name="create"></ion-icon>
+          Alterar
+        </ion-item-option>
+        <ion-item-option color="danger">
+          <ion-icon slot="start" name="trash"></ion-icon>
+
+          Excluir
+        </ion-item-option>
+      </ion-item-options>      
+
+    </ion-item-sliding>
+  </ion-list>
+
+
+  <h4>Cartões</h4>
+  <ion-card color="danger">
+    <img src="https://source.unsplash.com/random/800x600" alt="">
+    <ion-card-content>
+      <ion-card-title>
+        Lorem ipsum dolor, sit amet 
+      </ion-card-title>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, omnis! Deleniti reprehenderit dolorum veritatis quam unde? Nostrum dolorem eius iusto nihil eaque id incidunt assumenda. Eaque ut itaque sunt quo!
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <h4>Cartões com cabeçalho</h4>
+  <ion-card color="Primary">
+    
+    <img src="https://source.unsplash.com/random/800x600" alt="">
+
+    <ion-card-header>
+      <ion-card-title>
+
+        Awesome Title
+
+      </ion-card-title>
+      <ion-card-subtitle>
+
+        Awesome Subtitle
+
+      </ion-card-subtitle>
+      
+    </ion-card-header>
+
+    <ion-card-content>
+      
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, omnis! Deleniti reprehenderit dolorum veritatis quam unde? Nostrum dolorem eius iusto nihil eaque id incidunt assumenda. Eaque ut itaque sunt quo!
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+  <H4>Cartão com listagem de itens</H4>
+  <ion-card>
+    <ion-item href="http://www.google.com.br">
+      <ion-icon slot="start" name="add"></ion-icon>
+      <ion-label>1 - Item - Site Google</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon slot="start" name="star"></ion-icon>
+      <ion-label>2 - Item</ion-label>
+    </ion-item>
+  </ion-card>
+
+  <!-- <h1>Botões</h1>
+
+  <ion-button>Padrão</ion-button>
+
+  <ion-button href="http://google.com.br">Link</ion-button>
+    
+  <h4>Cores</h4>
+  <ion-button color="primary">Primary</ion-button>
+  <ion-button color="secondary">Secondary</ion-button>
+  <ion-button color="tertiary">Tertiary</ion-button>
+
+  <ion-button color="success">success</ion-button>
+  <ion-button color="warning">Warning</ion-button>
+  <ion-button color="danger">danger</ion-button>
+  <ion-button color="light">light</ion-button>
+  <ion-button color="medium">medium</ion-button>
+  <ion-button color="dark">dark</ion-button>
+
+  <h4>Expandido</h4>
+  <ion-button (click)="onClick()" expand="full">
+    Full
+  </ion-button>
+  <ion-button (click)="onClick()" expand="block">
+    Block
+  </ion-button>
+
+  <h4>Arredondado</h4>
+  <ion-button (click)="onClick()" shape="round">
+    Arredondado
+  </ion-button>
+
+  <h4>Preenchimento</h4>
+  <ion-button (click)="onClick()" fill="outline">
+    Preenchimento
+  </ion-button>
+
+  <h4>Ícones</h4>
+  <ion-button (click)="onClick()" shape="round">
+    <ion-icon slot="start" name="star"></ion-icon>
+    Icones
+  </ion-button><br>
+
+  <ion-button (click)="onClick()" shape="round">
+    <ion-icon slot="end" name="star"></ion-icon>
+    Icones
+  </ion-button>
+
+  <ion-button (click)="onClick()" shape="round">
+    <ion-icon slot="icon-only" name="star"></ion-icon>
+  </ion-button>
+
+  <h4>Tamanhos</h4>
+
+  <ion-button (click)="onClick()" size="large">
+    Large
+  </ion-button>
+
+  <ion-button (click)="onClick()">
+    Padrão
+  </ion-button>
+
+  <ion-button (click)="onClick()" size="small">
+    Small
+  </ion-button>
+  
+ -->
+
+
+</ion-content>
